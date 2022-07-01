@@ -12,7 +12,7 @@ const NavBar = () => {
 	return (
 		<Navbar bg="light" expand="lg">
 			<Container fluid>
-				<Navbar.Brand href="/onestop">One Stop Mama</Navbar.Brand>
+				<Navbar.Brand href="/">One Stop Mama</Navbar.Brand>
 
 				<Navbar.Toggle aria-controls="navbarScroll" />
 				<Navbar.Collapse id="navbarScroll">
@@ -21,11 +21,11 @@ const NavBar = () => {
 						style={{ maxHeight: '100px' }}
 						navbarScroll
 					>
-						<Nav.Link href="/onestop/register">Register</Nav.Link>
-						<Nav.Link href="#action2">Login</Nav.Link>
-						<Nav.Link href="/onestop/username/profile">Account</Nav.Link>
-						<Nav.Link href="/onestop/products">Products</Nav.Link>
-						<Nav.Link href="#action4">Cart</Nav.Link>
+						<Nav.Link href="/register">Register</Nav.Link>
+						<Nav.Link href="/login">Login</Nav.Link>
+						<Nav.Link href="/username">Account</Nav.Link>
+						<Nav.Link href="/products">Products</Nav.Link>
+						<Nav.Link href="checkout">Cart</Nav.Link>
 					</Nav>
 					<Form className="d-flex">
 						<FormControl

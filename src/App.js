@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 
 import NavBar from './Components/navBar';
+import Home from './Components/Home';
 import ProductList from './Components/products';
-import UserProfile from './Components/profile';
+
 import Register from './Components/register';
 
 function App() {
@@ -15,13 +16,9 @@ function App() {
 
 			<Router>
 				<Routes>
-					<Route path="/onestop/register" element={<Register />}></Route>
-					<Route path="/onestop/products" element={<ProductList />}></Route>
-					<Route
-						exact
-						path="`/onestop/${username}/profile`"
-						element={<UserProfile />}
-					></Route>
+					<Route path="/" element={<Home />}></Route>
+					<Route path="/register" element={<Register />}></Route>
+					<Route path="/products" element={<ProductList />}></Route>
 				</Routes>
 			</Router>
 		</div>
