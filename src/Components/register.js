@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import { Form, Button, FormGroup, FormControl, Nav } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import SignupButton from '../auth/sign-up-btn';
 
 const Register = () => {
 	const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Register = () => {
 				}
 			);
 			console.log(response);
-			navigate('/login');
+			navigate(`/${username}/profile`);
 		} catch (error) {
 			if (error.message === 'Request failed with status code 409') {
 				setUserExists(true);
@@ -73,6 +74,8 @@ const Register = () => {
 				<p></p>
 				<Button type="submit">Submit</Button>
 			</Form>
+			<p></p>
+			<SignupButton />
 			<p></p>
 			Already Registerd?
 			<Nav.Link href="/login">Sign In</Nav.Link>
