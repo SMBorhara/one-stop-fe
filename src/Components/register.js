@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { Form, Button, FormGroup, FormControl, Nav } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
-import SignupButton from '../auth/sign-up-btn';
+import SignupButton from './authFiles/sign-up-btn';
 
 const Register = () => {
 	const navigate = useNavigate();

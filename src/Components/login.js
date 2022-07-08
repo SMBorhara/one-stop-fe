@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { Nav } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import LoginButton from './authFiles/loginOAuth';
 
 const Login = () => {
 	const navigate = useNavigate();
@@ -76,6 +77,7 @@ const Login = () => {
 					<Nav.Link>Forgot password?</Nav.Link>
 				</p>
 			</form>
+			<LoginButton />
 		</div>
 	);
 };

@@ -1,11 +1,23 @@
 import React from 'react';
-import LogoutButton from './authFiles/logoutOAuth';
+import AuthenticationButton from './authFiles/authBtn';
+
+import { useAuth0 } from '@auth0/auth0-react';
 
 const UserProfile = () => {
+	const { user, isAuthenticated } = useAuth0();
 	return (
 		<div>
-			<h1>Account Home</h1>
-			<LogoutButton />
+			{isAuthenticated ? (
+				<div>
+					<h1>Hello {user.name} </h1>
+					<AuthenticationButton />
+				</div>
+			) : (
+				<div>
+					<h1>Please log in</h1>
+					<AuthenticationButton />
+				</div>
+			)}
 		</div>
 	);
 };
