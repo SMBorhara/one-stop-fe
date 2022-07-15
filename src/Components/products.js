@@ -6,7 +6,7 @@ const ProductList = () => {
 		console.log('help');
 		try {
 			const response = await axios.get(
-				'http://localhost:8000/onestop/products'
+				'onestop/products'
 			);
 
 			console.log(response);
