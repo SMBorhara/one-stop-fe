@@ -20,7 +20,7 @@ const Register = () => {
 			console.log(body);
 
 			const response = await axios.post(
-				'/register',
+				' http://localhost:8000/register',
 				JSON.stringify(body),
 				{
 					headers: { 'Content-Type': 'application/json' },

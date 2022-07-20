@@ -15,7 +15,7 @@ const Login = () => {
 		try {
 			const body = { username, password };
 			const response = await axios.post(
-				'/login',
+				'http://localhost:8000/login',
 				JSON.stringify(body),
 				{
 					headers: { 'Content-Type': 'application/json' },
@@ -83,3 +83,4 @@ const Login = () => {
 };
 
 export default Login;
+

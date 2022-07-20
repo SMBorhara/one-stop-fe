@@ -23,7 +23,7 @@ const NavBar = () => {
 					>
 						<Nav.Link href="/register">Register</Nav.Link>
 						<Nav.Link href="/login">Login</Nav.Link>
-						<Nav.Link href="/profile">Account</Nav.Link>
+						<Nav.Link href="/:username/profile">Account</Nav.Link>
 						<Nav.Link href="/products">Products</Nav.Link>
 						<Nav.Link href="checkout">Cart</Nav.Link>
 					</Nav>
